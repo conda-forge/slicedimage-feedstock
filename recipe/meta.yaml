@@ -6,7 +6,7 @@ package:
 
 source:
   url:  https://github.com/spacetx/slicedimage/archive/{{ SLICEDIMAGE_VERSION }}.zip
-  sha256: 0142b1f62f1c05fb0b8ecd8e190da4a3f51c122f580d053241362aecf61acf27
+  sha256: 1cf6a685f7e0af249febd52972bdaf6dc58fdc408a7c45c48912200522a58690
 
 build:
   noarch: python
