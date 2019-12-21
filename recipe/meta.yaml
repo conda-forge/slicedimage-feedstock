@@ -1,4 +1,4 @@
-{% set SLICEDIMAGE_VERSION = "4.1.0" %}
+{% set SLICEDIMAGE_VERSION = "4.1.1" %}
 
 package:
   name: slicedimage
@@ -6,7 +6,7 @@ package:
 
 source:
   url:  https://github.com/spacetx/slicedimage/archive/{{ SLICEDIMAGE_VERSION }}.zip
-  sha256: cec6b7916b03d50d82868ff3ee55b28ef7213797e9177d9ae472573335b7ace5
+  sha256: 1cf6a685f7e0af249febd52972bdaf6dc58fdc408a7c45c48912200522a58690
 
 build:
   noarch: python
@@ -23,8 +23,7 @@ requirements:
     - diskcache
     - packaging
     - requests
-    - scikit-image
-    - tifffile
+    - imageio
 
 test:
   imports:
