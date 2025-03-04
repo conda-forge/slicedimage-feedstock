@@ -10,15 +10,15 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
 
 requirements:
-  build:
-    - python >=3.6
+  host:
+    - python {{ python_min }}
     - setuptools
   run:
     - boto3
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
     - diskcache
     - packaging
@@ -26,6 +26,8 @@ requirements:
     - imageio
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - slicedimage
 
